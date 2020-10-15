@@ -1,5 +1,5 @@
 ---
-- hosts: odoodev
+- hosts: all
   roles:
     - odoo_base
     - odoo_community
