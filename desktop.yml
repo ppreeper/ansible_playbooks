@@ -27,6 +27,7 @@
     - virtualization
     - vagrant
     - db_sqlite3
+    - db_beaver
     - media
     - cadcam
     - asciidoc
