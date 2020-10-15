@@ -1,0 +1,33 @@
+---
+- hosts: all
+  become: yes
+  roles:
+    - system
+    - sysctl_custom
+    - userhome
+    - cli_utils
+    - fish
+    - snapd
+    - flatpak
+    #- gnome-shell
+    - nvim_dev
+    - libreoffice
+    - email
+    - chromium
+    - filesync
+    - wgvpn
+    - remotedesk
+    - lang_go_config
+    - lang_javascript_config
+    - lang_java
+    - lang_python_config
+    - lang_ruby_config
+    - vscode
+    - containers
+    - virtualization
+    - vagrant
+    - db_sqlite3
+    - media
+    - cadcam
+    - asciidoc
+    - hugo

@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+    - userhome
+    - cli_utils
+    - lang_javascript
+    - lang_python
+    - lang_go
+    - lang_ruby
+    - nvim_dev
