@@ -23,7 +23,8 @@
     - lang_python_config
     - lang_ruby_config
     - vscode
-    - containers
+    - docker_io
+    - lxd
     - virtualization
     - vagrant
     - db_sqlite3
@@ -32,3 +33,4 @@
     - cadcam
     - asciidoc
     - hugo
+    - zoom-client
