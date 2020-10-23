@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   roles:
-    - update_apt
+    - update
     - cli_utils
     - hosts_ip
     - mailcatcher
