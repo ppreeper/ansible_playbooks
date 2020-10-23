@@ -3,7 +3,7 @@
   connection: local
   vars:
     lxdgroup: ""
-    #item: ""
+    # item: ""
   tasks:
     - name: create containers
       loop: "{{ query('inventory_hostnames', lxdgroup) }}"
@@ -13,7 +13,7 @@
         source:
           type: image
           mode: pull
-          #server: "https://images.linuxcontainers.org"
+          # server: "https://images.linuxcontainers.org"
           protocol: lxd
           alias: "{{ hostvars[item].distro }}"
         profiles:

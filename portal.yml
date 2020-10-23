@@ -1,0 +1,12 @@
+---
+- hosts: all
+  roles:
+    - odoo_mod_install
+  vars:
+    home: "/var/lib/odoo"
+    config: "/var/lib/odoo/.config"
+    local: "/var/lib/odoo/.local"
+    user: "odoo"
+    mods:
+      - artg_theme_backend
+      - mtr

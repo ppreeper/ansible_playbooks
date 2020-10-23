@@ -9,7 +9,7 @@
     - fish
     - snapd
     - flatpak
-    #- gnome-shell
+    # - gnome-shell
     - nvim_dev
     - libreoffice
     - email

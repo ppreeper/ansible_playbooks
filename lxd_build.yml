@@ -6,18 +6,18 @@
     item: ""
   tasks:
     - name: create containers
-      #loop: "{{ query('inventory_hostnames', lxdgroup) }}"
+      # loop: "{{ query('inventory_hostnames', lxdgroup) }}"
       lxd_container:
         name: "{{ item }}"
         state: started
         source:
           type: image
           mode: pull
-          #server: "https://images.linuxcontainers.org"
+          # server: "https://images.linuxcontainers.org"
           protocol: lxd
           alias: "{{ hostvars[item].distro }}"
         profiles:
-          - default
+          - "{{ hostvars[item].profile }}"
         config:
           security.nesting: "{{ hostvars[item].nesting }}"
           security.privileged: "{{ hostvars[item].privileged }}"
