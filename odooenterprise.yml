@@ -1,6 +1,7 @@
 ---
 - hosts: all
   roles:
+    - apt_mirror
     - odoo_base
     - odoo_user
     - odoo_community_source

@@ -1,5 +1,4 @@
 ---
 - hosts: all
   roles:
-    - update_apt
     - cli_utils
