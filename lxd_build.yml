@@ -17,7 +17,6 @@
           protocol: lxd
           alias: "{{ hostvars[item].distro }}"
         profiles:
-          - default
           - "{{ hostvars[item].profile }}"
         config:
           security.nesting: "{{ hostvars[item].nesting }}"
