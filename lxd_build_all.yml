@@ -22,7 +22,6 @@
         config:
           security.nesting: "{{ hostvars[item].nesting }}"
           security.privileged: "{{ hostvars[item].privileged }}"
-          lxc.aa_profile: "{{ hostvars[item].unconfined }}"
         devices:
           eth0:
             type: nic
