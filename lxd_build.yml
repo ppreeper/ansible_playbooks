@@ -25,6 +25,6 @@
           eth0:
             type: nic
             nictype: bridged
-            parent: lxdbr0
+            parent: "{{ hostvars[item].bridge or lxdbr0 }}"
             ipv4.address: "{{ hostvars[item].ip_address }}"
         url: unix:/var/snap/lxd/common/lxd/unix.socket
