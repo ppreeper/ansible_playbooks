@@ -1,7 +1,6 @@
 ---
 - hosts: all
   roles:
-    - update_apt
     - cli_utils
     - hosts_ip
     - samba_server

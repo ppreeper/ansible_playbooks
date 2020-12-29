@@ -3,9 +3,11 @@
   connection: local
   vars:
     lxdgroup: ""
+    guest: ""
   tasks:
     - name: start containers
-      loop: "{{ query('inventory_hostnames', lxdgroup) }}"
-      lxd_container:
+      #loop: "{{ query('inventory_hostnames', lxdgroup) }}"
+      loop: "{{ groups[lxdgroup] }}"
+      community.general.lxd_container:
         name: "{{ item }}"
         state: started
